@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cadastro</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(0, 255, 255), rgb(0, 2, 131));
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+    <form action="">
+        <fieldset>
+            <legend>Formulário</legend>
+            <div class="inputBox">
+<label for="text" class="labelInput">Nome completo</label><br>
+<input type="text" name="nome" id="nome" class="inputUser" required> <br> <br>
+</div>
+<div class="inputBox">
+<label for="email" class="labelInput">E-mail</label> <br>
+<input type="email" name="email" id="email" class="inputUser" pattern=".+@gmail\.com" required> <br> <br>
+</div>
+<div class="inputBox">
+<label for="password" class="labelInput">Senha</label> <br>
+<input type="password" name="senha" id="senha" class="inputUser" required> <br> <br>
+</div>
+<div class="inputBox">
+<label for="password" >Confirmar senha</label> <br>
+<input type="password" name="confirmacao" id="confirmacao" class="inputUser" required> <br> <br>
+</div>
+<p>Gênero</p>
+<input type="radio" name="feminino" id="feminino" value="feminino" required>
+<label for="feminino">Feminino</label> <br>
+<input type="radio" name="masculino" id="masculino" value="masculino" required>
+<label for="masculino">Masculino</label> <br>
+<input type="radio" name="outro" id="outro" value="outro" required>
+<label for="outro">Outro</label> <br> <br>
+<div class="data">
+    <label for="data_nascimento"><b>Data de nascimento</b></label>
+    <input type="date" name="data_nascimento" id="data_nascimento" class="data_nascimento">
+</div> <br>
+<div class="estado">
+    <label>Estado</label> <br> <br>
+    <select name="estado" id="estado" required>
+        <option value="">Escolha seu estado</option>
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="es">Espírito Santo</option>
+    </select> <br> <br>
+    </div>
+    <div class="cidade">
+        <label for="text">Informe sua cidade</label> <br>
+        <input type="text" name="cidade" id="cidade" class="inputUser"> <br> <br>
+    </div> 
+    <div class="descricao">
+        <label for="text">Descrição pessoal</label><br>
+        <input type="text" name="descricao" id="descricao" class="inputUser"> <br><br>
+    </div>
+    <input type="submit" name="enviar" id="enviar">
+</fieldset>
+</form>
+</div>
+</body>
+</html>
